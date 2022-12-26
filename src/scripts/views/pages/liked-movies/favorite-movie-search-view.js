@@ -4,7 +4,10 @@ class FavoriteMovieSearchView {
   getTemplate() {
     return `
       <div class="content">
-        <input id="query" type="text">
+        <div class="search-input">
+          <input id="query" type="text">
+          <p>Search</p>
+        </div>
         <h2 class="content__heading">Your Liked Movie</h2>
         <div id="movies" class="movies">
         </div>
