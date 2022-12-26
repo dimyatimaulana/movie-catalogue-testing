@@ -9,6 +9,7 @@ const FavoriteMovieArray = {
       return;
     }
 
+    // eslint-disable-next-line consistent-return
     return favoriteMovies.find((movie) => movie.id === id);
   },
 
@@ -17,6 +18,7 @@ const FavoriteMovieArray = {
   },
 
   putMovie(movie) {
+    // eslint-disable-next-line no-prototype-builtins
     if (!movie.hasOwnProperty('id')) {
       return;
     }
@@ -50,6 +52,7 @@ const FavoriteMovieArray = {
 };
 
 describe('Favorite Movie Array Contract Test Implementation', () => {
+  // eslint-disable-next-line no-return-assign
   afterEach(() => favoriteMovies = []);
 
   itActsAsFavoriteMovieModel(FavoriteMovieArray);
